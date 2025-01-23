@@ -8,9 +8,8 @@ services:
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
-  depends_on:
-    - mymongodb
-
+    depends_on:
+      - mymongodb
   mymongodb:
     container_name: mymongodatabase
     image: mongo
