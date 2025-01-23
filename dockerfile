@@ -11,8 +11,8 @@ COPY package*.json ./
 # Instala las dependencias de la aplicación
 RUN npm install
 # Copia todos los archivos y carpetas del directorio actual en el sistema de archivos del host
-donde se está construyendo el contenedor Docker al directorio de trabajo actual en el
-contenedor
+# donde se está construyendo el contenedor Docker al directorio de trabajo actual en el
+# contenedor
 COPY . .
 # Indica que el contenedor escuchará en el puerto 8080
 EXPOSE 8080
